@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="{% static 'assets/img/favicon.png' %}" rel="icon">
+  <link href="{% static 'assets/img/apple-touch-icon.png' %}" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Roboto:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/fontawesome-free/css/all.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/aos/aos.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="{% static 'assets/css/main.css' %}" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header d-flex align-items-center">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="{% static 'assets/img/logo.png' %}" alt=""> -->
+        <h1>THE CONSTRUCTO<span>.</span></h1>
+      </a>
+
+      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="services">Services</a></li>
+          <li><a href="proj" class="active">Projects</a></li>
+          <li><a href="blog">Blog</a></li>
+
+          <li><a href="contact">Contact</a></li>
+           <li><a href="login_pg">Login</a></li>
+        </ul>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+    <!-- ======= Breadcrumbs ======= -->
+<div class="breadcrumbs d-flex align-items-center" style="background-image: url({% static 'assets/img/breadcrumbs-bg.jpg' %});">      <div class="container position-relative d-flex flex-column align-items-center" data-aos="fade">
+
+        <h2>Projects</h2>
+        <ol>
+          <li><a href="/">Home</a></li>
+          <li>Projects</li>
+        </ol>
+
+      </div>
+    </div><!-- End Breadcrumbs -->
+
+    <!-- ======= Our Projects Section ======= -->
+    <section id="projects" class="projects">
+      <div class="container" data-aos="fade-up">
+
+        <div class="portfolio-isotope" data-portfolio-filter="*" data-portfolio-layout="masonry" data-portfolio-sort="original-order">
+
+          <ul class="portfolio-flters" data-aos="fade-up" data-aos-delay="100">
+            <li data-filter="*" class="filter-active">All</li>
+            <li data-filter=".filter-design">Foundation</li>
+            <li data-filter=".filter-remodeling">Roofing</li>
+            <li data-filter=".filter-construction">Construction</li>
+
+            <li data-filter=".filter-repairs">Completed</li>
+
+          </ul><!-- End Projects Filters -->
+
+          <div class="row gy-4 portfolio-container" data-aos="fade-up" data-aos-delay="200">
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-remodeling">
+              <div class="portfolio-content h-100">
+                <img src="{% static 'assets/img/projects/roofing-1.jpeg' %}" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Roofing 1</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a href="{% static 'assets/img/projects/roofing-1.jpeg' %}" title="Remodeling 1" data-gallery="portfolio-gallery-remodeling" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="project-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Projects Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-construction">
+              <div class="portfolio-content h-100">
+                <img src="{% static 'assets/img/projects/construction-1.jpeg' %}" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Construction 1</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a href="{% static 'assets/img/projects/construction-1.jpeg' %}" title="Construction 1" data-gallery="portfolio-gallery-construction" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="project-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Projects Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-repairs">
+              <div class="portfolio-content h-100">
+                <img src="{% static 'assets/img/projects/completed-1.jpeg' %}" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Completed 1</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a href="{% static 'assets/img/projects/completed-1.jpeg' %}" title="Repairs 1" data-gallery="portfolio-gallery-repairs" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="project-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Projects Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-design">
+              <div class="portfolio-content h-100">
+                <img src="{% static 'assets/img/projects/foundation-1.jpeg' %}" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Foundation 1</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a href="{% static 'assets/img/projects/foundation-1.jpeg' %}" title="Repairs 1" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="project-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Projects Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-remodeling">
+              <div class="portfolio-content h-100">
+                <img src="{% static 'assets/img/projects/roofing-2.jpeg' %}" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Roofing 2</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a href="{% static 'assets/img/projects/roofing-2.jpeg' %}" title="Remodeling 2" data-gallery="portfolio-gallery-remodeling" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="project-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Projects Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-construction">
+              <div class="portfolio-content h-100">
+                <img src="{% static 'assets/img/projects/construction-2.png' %}" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Construction 2</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a href="{% static 'assets/img/projects/construction-2.png' %}" title="Construction 2" data-gallery="portfolio-gallery-construction" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="project-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Projects Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-repairs">
+              <div class="portfolio-content h-100">
+                <img src="{% static 'assets/img/projects/completed-2.jpeg' %}" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>completed 2</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a href="{% static 'assets/img/projects/completed-2.jpeg' %}" title="Repairs 2" data-gallery="portfolio-gallery-repairs" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="project-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Projects Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-design">
+              <div class="portfolio-content h-100">
+                <img src="{% static 'assets/img/projects/foundation-2.jpeg' %}" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>foundation 2</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a href="{% static 'assets/img/projects/foundation-2.jpeg' %}" title="Repairs 2" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="project-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Projects Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-remodeling">
+              <div class="portfolio-content h-100">
+                <img src="{% static 'assets/img/projects/roofing-3.jpeg' %}" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Roofing 3</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a href="{% static 'assets/img/projects/roofing-3.jpeg' %}" title="Remodeling 3" data-gallery="portfolio-gallery-remodeling" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="project-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Projects Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-construction">
+              <div class="portfolio-content h-100">
+                <img src="{% static 'assets/img/projects/construction-3.png' %}" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>Construction 3</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a href="{% static 'assets/img/projects/construction-3.png' %}" title="Construction 3" data-gallery="portfolio-gallery-construction" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="project-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Projects Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-repairs">
+              <div class="portfolio-content h-100">
+                <img src="{% static 'assets/img/projects/completed-3.jpeg' %}" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>completed 3</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a href="{% static 'assets/img/projects/completed-3.jpeg' %}" title="Repairs 2" data-gallery="portfolio-gallery-repairs" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="project-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Projects Item -->
+
+            <div class="col-lg-4 col-md-6 portfolio-item filter-design">
+              <div class="portfolio-content h-100">
+                <img src="{% static 'assets/img/projects/foundation-3.jpeg' %}" class="img-fluid" alt="">
+                <div class="portfolio-info">
+                  <h4>foundation 3</h4>
+                  <p>Lorem ipsum, dolor sit amet consectetur</p>
+                  <a href="{% static 'assets/img/projects/foundation-3.jpeg' %}" title="Repairs 3" data-gallery="portfolio-gallery-book" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
+                  <a href="project-details.html" title="More Details" class="details-link"><i class="bi bi-link-45deg"></i></a>
+                </div>
+              </div>
+            </div><!-- End Projects Item -->
+
+          </div><!-- End Projects Container -->
+
+        </div>
+
+      </div>
+    </section><!-- End Our Projects Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+
+    <div class="footer-content position-relative">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6">
+            <div class="footer-info">
+              <h3>THE CONSTRUCTO</h3>
+              <p>
+                Gracia building <br>
+                kallattumukk manacaud p. O  <br>Trivandrum<br><br>
+                <strong>Phone:</strong>+91 9633461935<br>
+                <strong>Email:</strong> info@example.com<br>
+              </p>
+
+            </div>
+          </div><!-- End footer info column-->
+<div class="col-lg-2 col-md-3 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li>Structural Design</a></li>
+              <li>Architechtural plan 3D</a></li>
+              <li>Building Permit</a></li>
+              <li>Estimation</a></li>
+              <li>Building Renovation</a></li>
+            </ul>
+          </div><!-- End footer links column-->
+
+
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-legal text-center position-relative">
+      <div class="container">
+       <div class="copyright">
+          &copy; 2023 Designed by <strong><span>INFOCYLANZ</span></strong>. All Rights Reserved <br><br>
+            Privacy Plocy Terms &Contitions Apply
+        </div>
+
+      </div>
+    </div>
+
+  </footer>
+  <!-- End Footer -->
+
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/aos/aos.js' %}"></script>
+  <script src="{% static 'assets/vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/purecounter/purecounter_vanilla.js' %}"></script>
+  <script src="{% static 'assets/vendor/php-email-form/validate.js' %}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{% static 'assets/js/main.js' %}"></script>
+
+</body>
+
+</html>

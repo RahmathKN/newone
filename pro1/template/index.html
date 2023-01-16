@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="{% static 'assets/img/favicon.png'  %}" rel="icon">
+  <link href="{% static 'assets/img/apple-touch-icon.png'  %}" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,600;1,700&family=Roboto:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Work+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="{% static 'assets/vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/bootstrap-icons/bootstrap-icons.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/fontawesome-free/css/all.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/aos/aos.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/glightbox/css/glightbox.min.css' %}" rel="stylesheet">
+  <link href="{% static 'assets/vendor/swiper/swiper-bundle.min.css' %}" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="{% static 'assets/css/main.css' %}" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="header d-flex align-items-center">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
+
+      <a href="index.html" class="logo d-flex align-items-center">
+        <!-- Uncomment the line below if you also wish to use an image logo -->
+        <!-- <img src="assets/img/logo.png" alt=""> -->
+        <h1>THE CONSTRUCTO<span>.</span></h1>
+      </a>
+
+      <i class="mobile-nav-toggle mobile-nav-show bi bi-list"></i>
+      <i class="mobile-nav-toggle mobile-nav-hide d-none bi bi-x"></i>
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="" class="active">Home</a></li>
+<!--          <li><a href="about">About</a></li>-->
+          <li><a href="services">Services</a></li>
+          <li><a href="proj">Projects</a></li>
+          <li><a href="blog">Blog</a></li>
+
+          <li><a href="contact">Contact/Register</a></li>
+          <li><a href="login_pg">Login</a></li>
+        </ul>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="hero">
+
+    <div class="info d-flex align-items-center">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-6 text-center">
+            <h2 data-aos="fade-down">WE ARE <span>BUILDING YOUR TRUST</span></h2>
+            <p data-aos="fade-up"></p>
+            <div data-aos="fade-up" data-aos-delay="200"  class="btn-get-started">Get Started</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="hero-carousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="5000">
+
+      <div class="carousel-item active" style="background-image: url({% static 'assets/img/hero-carousel/hero-carousel-1.jpg' %})"></div>
+      <div class="carousel-item" style="background-image: url({% static 'assets/img/hero-carousel/hero-carousel-2.jpg' %})"></div>
+      <div class="carousel-item" style="background-image: url({% static 'assets/img/hero-carousel/hero-carousel-3.jpg' %})"></div>
+      <div class="carousel-item" style="background-image: url({% static 'assets/img/hero-carousel/hero-carousel-4.jpg' %})"></div>
+      <div class="carousel-item" style="background-image: url({% static 'assets/img/hero-carousel/hero-carousel-5.jpg' %})"></div>
+
+      <a class="carousel-control-prev" href="#hero-carousel" role="button" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+      </a>
+
+      <a class="carousel-control-next" href="#hero-carousel" role="button" data-bs-slide="next">
+        <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+      </a>
+
+    </div>
+
+  </section><!-- End Hero Section -->
+
+  <main id="main">
+    <!-- ======= Constructions Section ======= -->
+    <section id="constructions" class="constructions">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-header">
+          <h2>Constructions</h2>
+          <p></p>
+        </div>
+
+        <div class="row gy-4">
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="card-item">
+              <div class="row">
+                <div class="col-xl-5">
+                  <div class="card-bg" style="background-image: url({% static 'assets/img/constructions-1.jpeg' %});"></div>
+                </div>
+                <div class="col-xl-7 d-flex align-items-center">
+                  <div class="card-body">
+                    <h4 class="card-title">STRUCTURAL DESIGN</h4>
+                    <p>Structural engineers combine the core principles of structural design with a sound background in physics and materials science to ensure that structures are built to withstand the loads and forces that they will encounter during their usage</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Card Item -->
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="card-item">
+              <div class="row">
+                <div class="col-xl-5">
+                  <div class="card-bg" style="background-image: url({% static 'assets/img/constructions-2.jpeg' %});"></div>
+                </div>
+                <div class="col-xl-7 d-flex align-items-center">
+                  <div class="card-body">
+                    <h4 class="card-title">HOUSE LIFTING</h4>
+                    <p>House lifting is a process in which a house is physically raised off of its foundation and placed on top of hydraulic jacks or steel beams. This is typically done in order to repair or replace the foundation, or to make room for a new level to be added to the house.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Card Item -->
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="card-item">
+              <div class="row">
+                <div class="col-xl-5">
+                  <div class="card-bg" style="background-image: url({% static 'assets/img/constructions-3.jpg' %});"></div>
+                </div>
+                <div class="col-xl-7 d-flex align-items-center">
+                  <div class="card-body">
+                    <h4 class="card-title">Architectural Plan 2D</h4>
+                    <p>An architectural plan is a detailed drawing or set of drawings of a building or building project that shows the relationships between the various parts of the structure.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Card Item -->
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="card-item">
+              <div class="row">
+                <div class="col-xl-5">
+                  <div class="card-bg" style="background-image: url({% static 'assets/img/constructions-4.png' %});"></div>
+                </div>
+                <div class="col-xl-7 d-flex align-items-center">
+                  <div class="card-body">
+                    <h4 class="card-title">Building Renovation</h4>
+                    <p>Building renovation is the process of improving or modernizing an existing building. This can include a variety of tasks, such as updating electrical, plumbing, and HVAC systems and improving the energy efficiency of the building.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><!-- End Card Item -->
+
+        </div>
+
+      </div>
+    </section><!-- End Constructions Section -->
+    <!-- ======= Alt Services Section ======= -->
+    <section id="alt-services" class="alt-services">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row justify-content-around gy-4">
+            <div class="col-lg-6 img-bg" style="background-image: url({% static 'assets/img/alt-services.jpeg' %});" data-aos="zoom-in" data-aos-delay="100"></div>
+
+          <div class="col-lg-5 d-flex flex-column justify-content-center">
+            <h3>What We Do?</h3>
+            <p>Once we have the client's requirements,we provide different architechtural designs and plans,from which they can select the best option.Experts also do intelligent planning,which helps you get the maximum possible results from the effort and investment you make.</p>
+
+            <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="100">
+              <i class="bi bi-easel flex-shrink-0"></i>
+              <div>
+                <h4><a href="" class="stretched-link">Economic development</a></h4>
+                <p>We can create jobs and stimulate economic growth in a community.</p>
+              </div>
+            </div><!-- End Icon Box -->
+
+            <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="200">
+              <i class="bi bi-patch-check flex-shrink-0"></i>
+              <div>
+                <h4><a href="" class="stretched-link">Improved infrastructure</a></h4>
+                <p>We can improve the infrastructure of a community by building new roads, bridges, schools, and other public facilities.</p>
+              </div>
+            </div><!-- End Icon Box -->
+
+            <div class="icon-box d-flex position-relative" data-aos="fade-up" data-aos-delay="300">
+              <i class="bi bi-brightness-high flex-shrink-0"></i>
+              <div>
+                <h4><a href="" class="stretched-link">Improved quality of life</a></h4>
+                <p>We can improve the quality of life for residents by providing access to new amenities and services.</p>
+              </div>
+            </div><!-- End Icon Box -->
+
+
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Alt Services Section -->
+
+    <!-- ======= Features Section ======= -->
+    <section id="features" class="features section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <ul class="nav nav-tabs row  g-2 d-flex">
+
+          <li class="nav-item col-3">
+            <a class="nav-link active show" data-bs-toggle="tab" data-bs-target="#tab-1">
+              <h4>Retrofitting</h4>
+            </a>
+          </li><!-- End tab nav item -->
+
+          <li class="nav-item col-3">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-2">
+              <h4>Building Cunstruction</h4>
+            </a><!-- End tab nav item -->
+
+          <li class="nav-item col-3">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-3">
+              <h4>Real Estate</h4>
+            </a>
+          </li><!-- End tab nav item -->
+
+          <li class="nav-item col-3">
+            <a class="nav-link" data-bs-toggle="tab" data-bs-target="#tab-4">
+              <h4>Building Valuation</h4>
+            </a>
+          </li><!-- End tab nav item -->
+
+        </ul>
+
+        <div class="tab-content">
+
+          <div class="tab-pane active show" id="tab-1">
+            <div class="row">
+              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="100">
+                <h3>What is Retrofitting of Building ?</h3>
+                <p class="fst-italic">
+                  Retrofitting is the process of upgrading or modifying an existing building or structure to improve its performance, safety, or functionality. This can involve a wide range of activities, such as adding insulation to improve energy efficiency, installing new windows or doors, reinforcing foundations or structural elements, or installing new mechanical or electrical systems. Retrofitting can be done for a variety of reasons, such as to improve the building's energy efficiency, to make it more accessible for people with disabilities, to modernize it, or to bring it up to current building codes and standards. Retrofitting is an important way to improve the performance and extend the life of an existing building, and it can also be an effective way to address issues that may not have been addressed during the original construction of the building.
+                </p>
+                <ul>
+               <!--   <li><i class="bi bi-check2-all"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
+                  <li><i class="bi bi-check2-all"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
+                  <li><i class="bi bi-check2-all"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate trideta storacalaperda mastiro dolore eu fugiat nulla pariatur.</li>
+             -->   </ul>
+              </div>
+              <div class="col-lg-6 order-1 order-lg-2 text-center" data-aos="fade-up" data-aos-delay="200">
+                <img src="{% static 'assets/img/features-1.jpeg' %}" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div><!-- End tab content item -->
+
+          <div class="tab-pane" id="tab-2">
+            <div class="row">
+              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center">
+                <h3>What is Building Construction?</h3>
+                <p class="fst-italic">
+                  Building construction is the process of creating a new building or structure, or adding to or altering an existing one. It involves a wide range of activities, from the initial planning and design phase to the construction and finishing phase. Building construction can be divided into several main categories, including residential construction (homes and apartments), commercial construction (office buildings, retail stores, and other business buildings), and industrial construction (factories, warehouses, and other industrial facilities).
+                </p>
+                <ul>
+                  <li><i class="bi bi-check2-all"></i>Planning and design: This involves determining the needs and requirements of the building, and developing a plan for the construction project.</li>
+                  <li><i class="bi bi-check2-all"></i>Site preparation: This involves preparing the construction site for the building.</li>
+                  <li><i class="bi bi-check2-all"></i> Foundation and framing.</li>
+                  <li><i class="bi bi-check2-all"></i> Finishing: This involves completing the interior and exterior of the building, including installing windows, doors, flooring, and other finishes.</li>
+                  <li><i class="bi bi-check2-all"></i>Testing and commissioning: This involves testing the various systems and components of the building to ensure that they are working properly, and making any necessary adjustments.</li>
+
+                </ul>
+              </div>
+              <div class="col-lg-6 order-1 order-lg-2 text-center">
+                <img src="{% static 'assets/img/features-2.jpeg' %}" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div><!-- End tab content item -->
+
+          <div class="tab-pane" id="tab-3">
+            <div class="row">
+              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center">
+                <h3>What is Real Estate ?</h3>
+                <ul>
+                  <li><i class="bi bi-check2-all"></i> Residential real estate: This refers to real estate that is used for housing.</li>
+                  <li><i class="bi bi-check2-all"></i> Commercial real estate: This refers to real estate that is used for business purposes.</li>
+                  <li><i class="bi bi-check2-all"></i> Agricultural real estate: This refers to real estate that is used for agricultural purposes.</li>
+                </ul>
+                <p class="fst-italic">
+                  Real estate refers to land and any buildings or structures on it, as well as any natural resources such as water, minerals, or plants. Real estate can be owned, leased, or rented by individuals or organizations, and it can be used for a variety of purposes, such as residential, commercial, industrial, or agricultural.
+                </p>
+              </div>
+              <div class="col-lg-6 order-1 order-lg-2 text-center">
+                <img src="{% static 'assets/img/features-3.jpg' %}" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div><!-- End tab content item -->
+
+          <div class="tab-pane" id="tab-4">
+            <div class="row">
+              <div class="col-lg-6 order-2 order-lg-1 mt-3 mt-lg-0 d-flex flex-column justify-content-center">
+                <h3>What is Building Validation ?</h3>
+                <p class="fst-italic">
+                  Building valuation is the process of determining the value of a building or structure. This can be done for a variety of purposes, such as to determine the value of a building for insurance purposes, to determine its market value for sale or purchase, or to assess its value for taxation or other legal purposes.
+                </p>
+                <ul>
+                  <li><i class="bi bi-check2-all"></i> Cost approach.</li>
+                  <li><i class="bi bi-check2-all"></i> Sales comparison approach.</li>
+                  <li><i class="bi bi-check2-all"></i> Income approach.</li>
+                  <li><i class="bi bi-check2-all"></i> Market approach.</li>
+                </ul>
+              </div>
+              <div class="col-lg-6 order-1 order-lg-2 text-center">
+                <img src="{% static 'assets/img/features-4.jpg' %}" alt="" class="img-fluid">
+              </div>
+            </div>
+          </div><!-- End tab content item -->
+
+        </div>
+
+      </div>
+    </section><!-- End Features Section -->
+
+
+    <!-- ======= Recent Blog Posts Section ======= -->
+    <section id="recent-blog-posts" class="recent-blog-posts">
+      <div class="container" data-aos="fade-up">
+
+    
+    
+  <div class=" section-header">
+        <h2>Recent Blog Posts</h2>
+        <p>We showcase some of our recent works.</p>
+      </div>
+
+      <div class="row gy-5">
+
+        <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="post-item position-relative h-100">
+
+            <div class="post-img position-relative overflow-hidden">
+              <img src="{% static 'assets/img/blog/blog-1.jpeg' %}" class="img-fluid" alt="">
+              <span class="post-date">December 12</span>
+            </div>
+
+            <div class="post-content d-flex flex-column">
+
+              <h3 class="post-title">Make your dream home come true</h3>
+
+              <div class="meta d-flex align-items-center">
+                <div class="d-flex align-items-center">
+                  <i class="bi bi-person"></i> <span class="ps-2">Customer satisfied</span>
+                </div>
+                <span class="px-3 text-black-50">/</span>
+                <div class="d-flex align-items-center">
+                  <i class="bi bi-folder2"></i> <span class="ps-2">Personal</span>
+                </div>
+              </div>
+
+              <hr>
+
+              <a href="blog" class="readmore stretched-link"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+
+            </div>
+
+          </div>
+        </div><!-- End post item -->
+
+        <div class="col-xl-4 col-md-6" data-aos="fade-up" data-aos-delay="200">
+          <div class="post-item position-relative h-100">
+
+            <div class="post-img position-relative overflow-hidden">
+              <img src="{% static 'assets/img/blog/blog-2.jpeg' %}" class="img-fluid" alt="">
+              <span class="post-date">July 17</span>
+            </div>
+
+            <div class="post-content d-flex flex-column">
+
+              <h3 class="post-title">Foundation to your future is strong</h3>
+
+              <div class="meta d-flex align-items-center">
+                <div class="d-flex align-items-center">
+                  <i class="bi bi-person"></i> <span class="ps-2">Mario Douglas</span>
+                </div>
+                <span class="px-3 text-black-50">/</span>
+                <div class="d-flex align-items-center">
+                  <i class="bi bi-folder2"></i> <span class="ps-2">Bussiness</span>
+                </div>
+              </div>
+
+              <hr>
+
+              <a href="blog" class="readmore stretched-link"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+
+            </div>
+
+          </div>
+        </div><!-- End post item -->
+
+        <div class="col-xl-4 col-md-6">
+          <div class="post-item position-relative h-100" data-aos="fade-up" data-aos-delay="300">
+
+            <div class="post-img position-relative overflow-hidden">
+              <img src="{% static 'assets/img/blog/blog-3.jpeg' %}" class="img-fluid" alt="">
+              <span class="post-date">September 05</span>
+            </div>
+
+            <div class="post-content d-flex flex-column">
+
+              <h3 class="post-title">Build your own Empire</h3>
+
+              <div class="meta d-flex align-items-center">
+                <div class="d-flex align-items-center">
+                  <i class="bi bi-person"></i> <span class="ps-2">Lisa Hunter</span>
+                </div>
+                <span class="px-3 text-black-50">/</span>
+                <div class="d-flex align-items-center">
+                  <i class="bi bi-folder2"></i> <span class="ps-2">Educational</span>
+                </div>
+              </div>
+
+              <hr>
+
+              <a href="blog" class="readmore stretched-link"><span>Read More</span><i class="bi bi-arrow-right"></i></a>
+
+            </div>
+
+          </div>
+        </div><!-- End post item -->
+
+      </div>
+
+      </div>
+    </section>
+    <!-- End Recent Blog Posts Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer" class="footer">
+
+    <div class="footer-content position-relative">
+      <div class="container">
+        <div class="row">
+
+          <div class="col-lg-4 col-md-6">
+            <div class="footer-info">
+              <h3>THE CONSTRUCTO</h3>
+              <p>
+                Gracia building <br>
+                kallattumukk manacaud p. O  <br>Trivandrum<br><br>
+                <strong>Phone:</strong>+91 9633461935<br>
+                <strong>Email:</strong> info@example.com<br>
+              </p>
+
+            </div>
+          </div><!-- End footer info column-->
+
+         <div class="col-lg-2 col-md-3 footer-links">
+            <h4>Useful Links</h4>
+            <ul>
+              <li>Home</li>
+              <li>Services</li>
+              <li>Projects</li>
+              <li>Blog</li>
+            </ul>
+          </div><!-- End footer links column-->
+
+          <div class="col-lg-2 col-md-3 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li>Structural Design</li>
+              <li>Architechtural plan 3D</li>
+              <li>Building Permit</li>
+              <li>Retrofiting</li>
+            </ul>
+          </div><!-- End footer links column-->
+
+
+          <div class="col-lg-2 col-md-3 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li>Real Estate</li>
+              <li>Construction</li>
+              <li>Structural Stability</li>
+              <li>Validation</li>
+            </ul>
+          </div><!-- End footer links column-->
+
+          <div class="col-lg-2 col-md-3 footer-links">
+            <h4>Our Services</h4>
+            <ul>
+              <li> House Lifting </li>
+              <li>Estimation </li>
+              <li>Building Renovation </li>
+            </ul>
+          </div><!-- End footer links column-->
+
+
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-legal text-center position-relative">
+      <div class="container">
+        <div class="copyright">
+          &copy; 2023 Designed by <strong><span>INFOCYLANZ</span></strong>. All Rights Reserved <br><br>
+            Privacy Plocy Terms &Contitions Apply
+        </div>
+
+      </div>
+    </div>
+
+  </footer>
+  <!-- End Footer -->
+
+  <a href="#" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+<!--  <div id="preloader"></div>-->
+
+  <!-- Vendor JS Files -->
+  <script src="{% static 'assets/vendor/bootstrap/js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/aos/aos.js' %}"></script>
+  <script src="{% static 'assets/vendor/glightbox/js/glightbox.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/isotope-layout/isotope.pkgd.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/swiper/swiper-bundle.min.js' %}"></script>
+  <script src="{% static 'assets/vendor/purecounter/purecounter_vanilla.js' %}"></script>
+  <script src="{% static 'assets/vendor/php-email-form/validate.js' %}"></script>
+
+  <!-- Template Main JS File -->
+  <script src="{% static 'assets/js/main.js' %}"></script>
+
+</body>
+
+</html>
